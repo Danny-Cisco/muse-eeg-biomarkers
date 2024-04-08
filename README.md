@@ -40,13 +40,20 @@ data_file = 'path/to/your/eeg_data.csv'
 
 ### Cell 2: Data Preprocessing and Visualization
 
-This step involves preprocessing the EEG data to remove noise and artifacts, followed by creating a graph overview to visualize the data trends and patterns.
+1. This step involves preprocessing the EEG data to remove dropouts, and calculates a more accurate samplerate
+2. Creates a graph overview to visualize the 4 electrodes from delta to beta to get the big picture.
+3. saves the graph as a png for later in the /outputs/images folder
 
 ### Cell 3: Biomarker Extraction
 
 In this step, we extract various potential biomarkers from the EEG data, such as:
 
-- **DAR (Delta/Alpha Ratio)**: Used as a potential indicator for adult ADHD.
-- **Average PAF (Peak Alpha Frequency)**: Considered a marker for general brain health.
+- **DAR (Delta/Alpha Ratio)**: The latest potential indicator for adult ADHD.
+- **TBR (Theta/Beta Ratio)**: The most common indicator for child ADHD.
 
-The extraction of these biomarkers can provide insights into the individual's neurological state or potential neurological conditions.
+- **TAR (Theta/Alpha Ratio)**: A straight forward indicator for anxiety. most biofeedback aims to push up alpha
+- **BAR (Beta/Alpha Ratio)**: A less obvious approach for anxiety, is to push down beta, which will allow more alpha as the two work together in counter to each other
+
+- **Average PAF (Peak Alpha Frequency)**: Considered a marker for general brain health. 10hz is good. 8hz means you are old or lacking sleep
+
+The collection of these bio markers over time should highlight what lifestyle changes or neurofeedback techniques are effective
