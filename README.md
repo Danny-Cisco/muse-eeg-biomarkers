@@ -2,6 +2,8 @@
 
 This guide is designed for persons interested in using the Muse headband in conjunction with the Mind Monitor app to analyze EEG data for personal insights into brain activity, particularly for on going tracking to evaluate the effects of neurofeedback training and lifestyle factors. The aim is to help me preprocess my EEG data, visualize it, and extract potential biomarkers that could be indicative of various neurological conditions or states, such as ADHD or general brain health.
 
+![Mind Monitor Screenshot](outputs/images/mindMonitor_2024-04-08--11-11-30.png)
+
 ## Full Disclosure
 
 I've been learning about Neurofeedback for less than a week, so don't assume for a moment I know what I'm doing with your brain. Research into the best metrics when using EEG as a diagnostic tool is ongoing, and effectivness is often mixed due to the variability in peoples brains.
