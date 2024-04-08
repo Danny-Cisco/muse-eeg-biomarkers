@@ -1,6 +1,8 @@
 # Muse EEG Analysis Guide
 
-This guide is designed for persons interested in using the Muse headband in conjunction with the Mind Monitor app to analyze EEG data for personal insights into brain activity, particularly for on going tracking to evaluate the effects of neurofeedback training and lifestyle factors. The aim is to help me preprocess my EEG data, visualize it, and extract potential biomarkers that could be indicative of various neurological conditions or states, such as ADHD or general brain health.
+This Jupyter notebook is designed for persons interested in tracking EEG biometrics using the Muse headband + Mind Monitor app for personal insights into frequecy based brain activity.
+
+The aim is to help me preprocess my EEG data, visualize it, and extract potential biomarkers that could be indicative of various neurological conditions or states, such as ADHD or general brain health and how it changes over time.
 
 ![Mind Monitor Screenshot](outputs/images/mindMonitor_2024-04-08--11-11-30.png)
 
@@ -8,38 +10,40 @@ This guide is designed for persons interested in using the Muse headband in conj
 
 I've been learning about Neurofeedback for less than a week, so don't assume for a moment I know what I'm doing with your brain. Research into the best metrics when using EEG as a diagnostic tool is ongoing, and effectivness is often mixed due to the variability in peoples brains.
 
-Just assume I dont know what I'm doing
+Just assume I dont know what I'm doing!
 
-## Getting Started
+## GETTING STARTED
 
-### Equipment and App Settings
+### What You Will Need...
 
 - **Hardware**: Muse headband
 
 - **Software**
 
-  - **iOS app**: Mind Monitor (one time purchase on appstore)
-    - **Settings**:
-    - **Recording Format**: CSV
-    - **Recording Interval**: Constant
-  - **file hosting**: Dropbox (required for exporting from the Mind Monitor app)
+  - **Mind Monitor** (app on ios /android appstore)
+    - Mind Monitor Settings: - Recording Format: CSV - Recording Interval: Constant
+  - **Dropbox** (required for exporting from the Mind Monitor app)
 
-  - **environment**: Python Jupyter Notebook, or Google collab etc
+  - **Jupyter Notebook** or Google collab etc
 
-### Data Collection Procedure
+### Data Collection Procedure...
 
 1. Wear the Muse headband and ensure it's properly connected to the Mind Monitor app.
 2. Adjust the Mind Monitor app settings as specified above.
 3. Record 5 minutes of EEG data with your eyes closed, without engaging in active meditation.
 4. Save the recording to Dropbox.
 
-### Preparing the Data for Analysis
+### Preparing the Data for Analysis...
 
-After recording, transfer the CSV file from Dropbox to this notebook's files directory for analysis.
+After recording, extract the zip, and transfer the CSV file from Dropbox to this notebook's files directory for analysis.
 
 ## Analysis Steps
 
 ### Cell 1: Setting the Data Path
+
+**Option 1 -auto** - just add your latest csv to the 'raw_data' folder and run the cell. The code will automatically use the newest file in that folder.
+
+**Option 2 -manual** - uncomment option 2, and add the file_path manually
 
 ```python
 # Define the path to your EEG data file
