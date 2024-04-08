@@ -12,11 +12,17 @@ Just assume I dont know what I'm doing
 
 ### Equipment and App Settings
 
-- **Device**: Muse headband
-- **Application**: Mind Monitor
-- **Settings**:
-  - **Recording Format**: CSV
-  - **Recording Interval**: Constant
+- **Hardware**: Muse headband
+
+- **Software**
+
+  - **iOS app**: Mind Monitor (one time purchase on appstore)
+    - **Settings**:
+    - **Recording Format**: CSV
+    - **Recording Interval**: Constant
+  - **file hosting**: Dropbox (required for exporting from the Mind Monitor app)
+
+  - **environment**: Python Jupyter Notebook, or Google collab etc
 
 ### Data Collection Procedure
 
@@ -46,7 +52,7 @@ data_file = 'path/to/your/eeg_data.csv'
 
 ### Cell 3: Biomarker Extraction
 
-In this step, we extract various potential biomarkers from the EEG data, such as:
+1. Extract various potential biomarkers from the EEG data, such as:
 
 - **DAR (Delta/Alpha Ratio)**: The latest potential indicator for adult ADHD.
 - **TBR (Theta/Beta Ratio)**: The most common indicator for child ADHD.
@@ -56,4 +62,6 @@ In this step, we extract various potential biomarkers from the EEG data, such as
 
 - **Average PAF (Peak Alpha Frequency)**: Considered a marker for general brain health. 10hz is good. 8hz means you are old or lacking sleep
 
-The collection of these bio markers over time should highlight what lifestyle changes or neurofeedback techniques are effective
+2. Save the Biometrics to an ongoing CSV file for future visualisation
+
+Good luck! Hopfully the collection of these bio markers over time should highlight what lifestyle changes or neurofeedback techniques are effective
