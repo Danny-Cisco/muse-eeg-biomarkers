@@ -4,7 +4,7 @@ This Jupyter notebook is designed for persons interested in tracking EEG biometr
 
 The aim is to help me preprocess my EEG data, visualize it, and extract potential biomarkers that could be indicative of various neurological conditions or states, such as ADHD or general brain health and how it changes over time.
 
-![Mind Monitor Screenshot](outputs/images/mindMonitor_2024-04-08--11-11-30.png)
+![Mind Monitor Screenshot](example-image.png)
 
 ## Full Disclosure
 
@@ -70,7 +70,6 @@ data_file = 'path/to/your/eeg_data.csv'
 
 2. Save the Biometrics to an ongoing CSV file for future visualisation
 
-## Good luck! 
+## Good luck!
+
 Hopfully the collection of these bio markers over time should highlight what lifestyle changes or neurofeedback techniques are effective
-
-
