@@ -70,4 +70,7 @@ data_file = 'path/to/your/eeg_data.csv'
 
 2. Save the Biometrics to an ongoing CSV file for future visualisation
 
-Good luck! Hopfully the collection of these bio markers over time should highlight what lifestyle changes or neurofeedback techniques are effective
+## Good luck! 
+Hopfully the collection of these bio markers over time should highlight what lifestyle changes or neurofeedback techniques are effective
+
+
